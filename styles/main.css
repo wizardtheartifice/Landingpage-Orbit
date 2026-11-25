@@ -1,0 +1,233 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0B1020;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        a {
+            color: #9AA4BF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+            display: inline-block;
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            &::before {
+                content: '😊';
+            }
+        }
+
+
+    }
+}
+
+img {
+    width: 200px;
+}
+
+.btn-base {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-xl {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+}
+
+.btn-emphasys {
+    background-color: #6C5CE7;
+    border: 1px solid #3b327e;
+}
+
+.btn-emphasys:hover {
+    background-color: #262053;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #9AA4BF;
+
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #0B1020;
+}
+
+.emphasys {
+    color: #22D3A6;
+}
+
+.hero-section {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #9AA4BF;
+        font-size: 1.5rem;
+    }
+
+    .btn-group {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .version {
+        padding: 5px 10px;
+        color: #22D3A6;
+        background: rgba(34, 211, 166, 0.15);
+        border-radius: 20px;
+        font-weight: 500;
+    }
+}
+
+.checklist {
+    width: 400px;
+    padding: 25px;
+    background: #151B2E;
+    border: 1px solid #9AA4BF;
+    border-radius: 15px;
+
+    .checklist-todo {
+
+        div {
+            margin: 10px 0;
+            padding: 10px;
+            background: #0B1020;
+            border-radius: 10px;
+        }
+    }
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+
+    strong {
+        font-size: 2em;
+    }
+
+    span {
+        font-size: 1.2em;
+        color: #9aa4bf;
+    }
+}
+
+.metric-section {
+    padding: 20px 0;
+    border-top: 1px solid #1f242f;
+    border-bottom: 1px solid #1f242f;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.design {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px 150px 50px;
+
+    .card-design {
+        span {
+            color: #6C5CE7;
+            font-size: 30px;
+            font-family: monospace;
+            text-align: end;
+        }
+    }
+
+}
+
+.card-design {
+    width: 200px;
+    height: 250px;
+    background: #151B2E;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #151B2E;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+
+    &:hover {
+        transform: translateY(-20px);
+        border: 1px solid #6C5CE7;
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        color: #6C5CE7;
+        text-align: center;
+    }
+}
+
+.features-footer {
+    border-top: 1px solid #1f242f;
+    padding: 40px 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: #9AA4BF;
+
+}
